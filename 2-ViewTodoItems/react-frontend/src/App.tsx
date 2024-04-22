@@ -12,8 +12,6 @@ import {
   Input,
 } from "@chakra-ui/react";
 import { IconCircle, IconCircleX, IconTag } from "@tabler/icons-react";
-import axios from "axios";
-import { useEffect, useState } from "react";
 
 interface TodoItem {
   id: string;
@@ -23,20 +21,32 @@ interface TodoItem {
   priority: number;
 }
 
+const todos: TodoItem[] = [
+  {
+    id: "1",
+    title: "Learn to code",
+    priority: 1,
+    isComplete: true,
+    tags: [],
+  },
+  {
+    id: "2",
+    title: "Take out the trash",
+    priority: 0,
+    isComplete: false,
+    tags: ["Habits", "Chores"],
+  },
+  {
+    id: "3",
+    title: "Read a good book",
+    priority: 0,
+    isComplete: false,
+    tags: ["Habits"],
+  },
+];
+
 function App() {
-  const [todos, setTodos] = useState<TodoItem[]>([]);
   const theme: Theme = useTheme();
-
-  useEffect(() => {
-    async function init() {
-      const response = await axios.get<TodoItem[]>(
-        "http://localhost:5239/todos"
-      );
-      setTodos(response.data);
-    }
-    init();
-  }, []);
-
   return (
     <Center w="100vw" h="100vh">
       <Stack p={4} border="0.5px solid #eee" borderRadius={10} w="600px">
