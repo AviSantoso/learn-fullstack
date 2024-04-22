@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-NewProject", "1-NewProject", "{E87182A7-6ACA-463D-A02C-ABF4CF1F07E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-backend", "1-NewProject\dotnet-backend\dotnet-backend.csproj", "{1BAC3365-E315-499A-9E34-C43C641D0210}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-ViewTodoItems", "2-ViewTodoItems", "{F4B44472-9CE0-4B58-8EC5-01FFDC21C822}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-backend", "2-ViewTodoItems\dotnet-backend\dotnet-backend.csproj", "{CA427C8E-9176-4E93-8C7D-1A2F6801389F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-FetchTodoItems", "3-FetchTodoItems", "{21884A6D-FC60-4D6F-B805-327F891F2F5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-backend", "3-FetchTodoItems\dotnet-backend\dotnet-backend.csproj", "{C8596153-565B-486D-9DFC-3498AEF6E072}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BAC3365-E315-499A-9E34-C43C641D0210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAC3365-E315-499A-9E34-C43C641D0210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAC3365-E315-499A-9E34-C43C641D0210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAC3365-E315-499A-9E34-C43C641D0210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA427C8E-9176-4E93-8C7D-1A2F6801389F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA427C8E-9176-4E93-8C7D-1A2F6801389F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA427C8E-9176-4E93-8C7D-1A2F6801389F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA427C8E-9176-4E93-8C7D-1A2F6801389F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8596153-565B-486D-9DFC-3498AEF6E072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8596153-565B-486D-9DFC-3498AEF6E072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8596153-565B-486D-9DFC-3498AEF6E072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8596153-565B-486D-9DFC-3498AEF6E072}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1BAC3365-E315-499A-9E34-C43C641D0210} = {E87182A7-6ACA-463D-A02C-ABF4CF1F07E2}
+		{CA427C8E-9176-4E93-8C7D-1A2F6801389F} = {F4B44472-9CE0-4B58-8EC5-01FFDC21C822}
+		{C8596153-565B-486D-9DFC-3498AEF6E072} = {21884A6D-FC60-4D6F-B805-327F891F2F5A}
+	EndGlobalSection
+EndGlobal
